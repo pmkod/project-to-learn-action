@@ -1,0 +1,16 @@
+name: My first workflow
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-22.04
+        steps:
+            - name: Welcome
+              run: echo "My first Github actions Job"
+
+            - name: List files
+              run: ls
+
+            - name: Read file
+              run: cat README.md
